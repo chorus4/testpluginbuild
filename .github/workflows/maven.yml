@@ -30,6 +30,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B clean package
      
+    - run: ls
+     
     - run: git config --global user.email "fiat70998@gmail.com"
     - run: git config --global user.name "chorus4"
      
