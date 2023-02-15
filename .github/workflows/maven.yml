@@ -31,6 +31,7 @@ jobs:
       run: mvn -B clean package
      
     - run: git config --global user.email "fiat70998@gmail.com"
+    - run: git config --global user.name "chorus4"
      
     - run: git add .
     - run: git commit -m "Hiasd" 
