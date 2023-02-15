@@ -34,7 +34,7 @@ jobs:
     - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
     - run: chmod 600 "$HOME/.ssh/key"
 
-    - run: cd target && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no -p 12174" --archive --compress --delete . ubuntu@4.tcp.eu.ngrok.io:~/plugin
+    - run: cd target && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no -p 12174" --archive --compress --delete target/Plugin.jar ubuntu@4.tcp.eu.ngrok.io:~/plugin
 
     
     - uses: actions/upload-artifact@v3
