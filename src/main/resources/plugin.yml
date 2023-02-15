@@ -1,0 +1,26 @@
+name: Plugin
+version: '${project.version}'
+main: me.plugin1.plugin.Main
+api-version: 1.16
+
+depend: [PlaceholderAPI]
+
+commands:
+  reloadPlugin: {}
+  serv: {}
+  ender:
+    aliases:
+      - ec
+  particles: {}
+  armorStand:
+    aliases:
+      - arm
+  repair: {}
+  vanish:
+    aliases:
+      - vn
+      - v
+  inventory:
+    aliases:
+      - inv
+      - in
