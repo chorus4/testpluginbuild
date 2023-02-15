@@ -19,7 +19,7 @@ public final class Main extends JavaPlugin {
         getCommand("particles").setExecutor(new ParticleCommand());
         getCommand("armorStand").setExecutor(new ArmorCommand());
         getCommand("repair").setExecutor(new RepairCommand());
-        getCommand("vanish").setExecutor(new VanishCommand());
+        // getCommand("vanish").setExecutor(new VanishCommand());
         getCommand("inventory").setExecutor(new SeeInvCommand());
         Bukkit.getPluginManager().registerEvents(new EventListener(this), this);
 
